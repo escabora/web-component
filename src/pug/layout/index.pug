@@ -15,14 +15,12 @@ html(lang='pt-br')
     block styles
 
   body
-    include ../components/header.pug
     
     //- Main Content
     main(role='main', class=`${$templateClass}-main`)
       block content
       
     //- Footer
-    include ../components/footer.pug
     block footer
       
     //- Scripts

@@ -7,6 +7,7 @@ const entries = (acc, file) => {
 }
 
 const entriesPages = PAGES.reduce((acc, file) => {
+  console.log(file)
   const dirname = file.split('/pages')[1]
   acc[dirname] = dirname in acc ? (acc[dirname] = file) : file
 

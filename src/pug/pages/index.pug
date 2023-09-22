@@ -9,13 +9,11 @@ block vars
 
 //- Page styles
 block append styles
-  link(rel='stylesheet', href=`${$definePath}/styles/globals.css`, media='all')/
-  link(rel='stylesheet', href=`${$definePath}/styles/${$templateName}.css`, media='all')/
+  link(rel='stylesheet', href=`${$definePath}/styles/index.css`, media='all')/
 
 //- Main Content
 block content
-  div home
+  blue-component
 
 block append scripts
-  script(type='text/javascript', src=`${$definePath}/js/globals.js`) 
-  script(type='text/javascript', src=`${$definePath}/js/${$templateName}.js`) 
+  script(type='text/javascript', src=`${$definePath}/js/index.js`) 
