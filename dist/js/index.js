@@ -86,15 +86,39 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/index.js":
-/*!*************************!*\
-  !*** ./src/js/index.js ***!
-  \*************************/
+/***/ "./src/js/components/Form/index.js":
+/*!*****************************************!*\
+  !*** ./src/js/components/Form/index.js ***!
+  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Blue; });\nfunction Blue(props) {\n  return class extends HTMLElement {\n    constructor() {\n      super();\n      const shaddow = this.attachShadow({\n        mode: 'open'\n      });\n      this.render(shaddow, props);\n    }\n\n    render(shaddow, props) {\n      const section = document.createElement('section');\n      section.innerHTML = `<div class='my-component'>\n      ${props.name}\n      </div>`;\n      shaddow.appendChild(section);\n    }\n\n  };\n}\nconst props = {\n  images: [],\n  name: 'Component'\n};\ncustomElements.define('blue-component', Blue(props));\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst Form = props => {\n  return `<div class='my-component'>\n  ${props.name}\n  </div>`;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Form);\n\n//# sourceURL=webpack:///./src/js/components/Form/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/core/index.js":
+/*!******************************!*\
+  !*** ./src/js/core/index.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Blue; });\n/* harmony import */ var _components_Form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Form */ \"./src/js/components/Form/index.js\");\n\nfunction Blue(props) {\n  return class extends HTMLElement {\n    constructor() {\n      super();\n      const shaddow = this.attachShadow({\n        mode: 'open'\n      });\n      this.render(shaddow, props);\n    }\n\n    render(shaddow, props) {\n      const section = document.createElement('section');\n      section.innerHTML = Object(_components_Form__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(props);\n      shaddow.appendChild(section);\n    }\n\n  };\n}\n\n//# sourceURL=webpack:///./src/js/core/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./core */ \"./src/js/core/index.js\");\n\nconst props = {\n  images: [],\n  name: 'Component'\n};\ncustomElements.define('blue-component', Object(_core__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(props));\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
