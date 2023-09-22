@@ -1,4 +1,5 @@
-import Form from '../components/Form'
+import Layout from '../layout/index'
+
 export default function Blue(props) {
   return class extends HTMLElement {
     constructor() {
@@ -9,7 +10,7 @@ export default function Blue(props) {
 
     render(shaddow, props) {
       const section = document.createElement('section');
-      section.innerHTML = Form(props);
+      section.innerHTML = Layout(props);
       shaddow.appendChild(section)
     }
   }
