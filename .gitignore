@@ -50,9 +50,6 @@ Temporary Items
 # Node modules
 node_modules/
 
-# Dist
-dist/
-
 # App archives
 *.map
 *.log
