@@ -24,4 +24,4 @@ jobs:
 
     - name: Build
       run: |
-        yarn build
+        yarn install && yarn build
