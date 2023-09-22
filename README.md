@@ -1,1 +1,1 @@
-# Boilerplate Static with webpack
+# Boilerplate web component
