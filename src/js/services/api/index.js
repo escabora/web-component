@@ -9,8 +9,8 @@ const delay = (data) =>
     return await delay({
       fileds: [],
       titlePage: [],
-      nextPage: 'adress',
-      prevPage: 'person',
+      nextPage: 'person',
+      prevPage: 'basic',
     })
   }
 
@@ -19,7 +19,7 @@ const delay = (data) =>
     fileds: [],
     titlePage: [],
     nextPage: 'adress',
-    prevPage: 'person',
+    prevPage: 'basic',
   })
 }
 
@@ -27,7 +27,7 @@ const adress = async () => {
   return await delay({
     fileds: [],
     titlePage: [],
-    nextPage: 'adress',
+    nextPage: 'profession',
     prevPage: 'person',
   })
 }
@@ -37,7 +37,7 @@ const profession = async () => {
     fileds: [],
     titlePage: [],
     nextPage: 'adress',
-    prevPage: 'person',
+    prevPage: 'customization',
   })
 }
 
@@ -45,8 +45,8 @@ const customization = async () => {
   return await delay({
     fileds: [],
     titlePage: [],
-    nextPage: 'adress',
-    prevPage: 'person',
+    nextPage: 'finished',
+    prevPage: 'profession',
   })
 }
 
