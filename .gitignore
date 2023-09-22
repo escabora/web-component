@@ -55,5 +55,3 @@ node_modules/
 *.log
 
 *.psd
-
-dist/
