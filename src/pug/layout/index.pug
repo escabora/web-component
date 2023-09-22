@@ -1,0 +1,29 @@
+
+- var $templateName = '';
+- var $templateClass = '';
+block vars
+
+doctype
+html(lang='pt-br')
+  head
+    //- SEO
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    
+    //- Styles
+    block styles
+
+  body
+    include ../components/header.pug
+    
+    //- Main Content
+    main(role='main', class=`${$templateClass}-main`)
+      block content
+      
+    //- Footer
+    include ../components/footer.pug
+    block footer
+      
+    //- Scripts
+    block scripts

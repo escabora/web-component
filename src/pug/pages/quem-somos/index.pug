@@ -1,0 +1,22 @@
+extends ../../layout/index.pug
+
+//- Template variables
+block vars
+  - var $templateName = 'quem-somos';
+  - var $templateClass = 'quem-somos';
+  - var $definePath = host ? host : '..'
+
+  
+//- Page styles
+block append styles
+  link(rel='stylesheet', href=`${$definePath}/styles/globals.css`, media='all')/
+  //- link(rel='stylesheet', href=`${$definePath}/styles/${$templateName}.css`, media='all')/
+
+//- Main Content
+block content
+  div Quem Somos
+
+
+block append scripts
+  script(type='text/javascript', src=`${$definePath}/js/globals.js`) 
+  //- script(type='text/javascript', src=`${$definePath}/js/${$templateName}.js`) 
