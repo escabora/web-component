@@ -1,6 +1,6 @@
 const Form = (props) => {
   return `<div class='my-component'>
-  <form></form>
+  <form><input /></form>
   ${props.name}
   </div>`
 }
