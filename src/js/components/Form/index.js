@@ -6,8 +6,6 @@ import useStep from './useSteps'
 const Form = async (props, shaddow) => {
   const { currentStepFields, state } = await useStep(props, shaddow)
 
-  console.log(currentStepFields)
-
   return await `
   ${CardPlaceholder()}
   <div class='proposal__container'>

@@ -23,8 +23,8 @@ const basic = async () => {
 const person = async () => {
   return await delay({
     fields: [
-      { name: 'CPF', value: '' },
       { name: 'name', value: '' },
+      { name: 'CPF', value: '' },
       { name: 'email', value: '' },
       { name: 'phone', value: '' },
     ],
@@ -38,9 +38,9 @@ const person = async () => {
 const adress = async () => {
   return await delay({
     fields: [
-      { name: 'CPF', value: '' },
-      { name: 'name', value: '' },
       { name: 'email', value: '' },
+      { name: 'name', value: '' },
+      { name: 'CPF', value: '' },
       { name: 'phone', value: '' },
     ],
     titlePage: [],
@@ -53,10 +53,10 @@ const adress = async () => {
 const customization = async () => {
   return await delay({
     fields: [
-      { name: 'CPF', value: '' },
-      { name: 'name', value: '' },
-      { name: 'email', value: '' },
       { name: 'phone', value: '' },
+      { name: 'name', value: '' },
+      { name: 'CPF', value: '' },
+      { name: 'email', value: '' },
     ],
     titlePage: [],
     nextStep: 'finished',
