@@ -81,30 +81,30 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/styles/tokens.scss":
-/*!********************************!*\
-  !*** ./src/styles/tokens.scss ***!
-  \********************************/
+/***/ "./src/styles/ds-class.scss":
+/*!**********************************!*\
+  !*** ./src/styles/ds-class.scss ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/styles/tokens.scss?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/styles/ds-class.scss?");
 
 /***/ }),
 
-/***/ 2:
-/*!**************************************!*\
-  !*** multi ./src/styles/tokens.scss ***!
-  \**************************************/
+/***/ 1:
+/*!****************************************!*\
+  !*** multi ./src/styles/ds-class.scss ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! /Users/gescabora/Documents/estudos/web-component/src/styles/tokens.scss */\"./src/styles/tokens.scss\");\n\n\n//# sourceURL=webpack:///multi_./src/styles/tokens.scss?");
+eval("module.exports = __webpack_require__(/*! /Users/gescabora/Documents/estudos/web-component/src/styles/ds-class.scss */\"./src/styles/ds-class.scss\");\n\n\n//# sourceURL=webpack:///multi_./src/styles/ds-class.scss?");
 
 /***/ })
 

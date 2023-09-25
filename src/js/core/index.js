@@ -13,6 +13,7 @@ export default function Blue(props) {
 
     render(shaddow, props) {
       const section = document.createElement('section')
+      section.setAttribute('class', 'proposal')
       section.innerHTML = Layout(props)
       shaddow.appendChild(section)
     }

@@ -545,3 +545,55 @@
 .ds-button__right-icon {
   margin-left: 12px
 }
+
+.sender {
+  display: flex;
+  margin-top: 80px;
+  row-gap: 10px;
+}
+
+.sender button {
+  margin-bottom: 0;
+  text-transform: lowercase;
+  width: 100%;
+} 
+
+.proposal__container {
+  flex: 1 1;
+  min-height: calc(100vh - 72px);
+  padding: 16px
+}
+
+@media only screen and (min-width: 700px) {
+  .proposal__container {
+      padding:40px 50px
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .proposal__container:first-child {
+      padding:80px 120px 20px 100px
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .proposal__container:first-child {
+      padding-left:calc(50vw - 550px)
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .proposal__container:nth-child(2) {
+      padding:50px 100px 20px 120px
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .proposal__container:nth-child(2) {
+      padding-right:calc(50vw - 550px)
+  }
+}
+
+.proposal {
+  display: flex;
+}
