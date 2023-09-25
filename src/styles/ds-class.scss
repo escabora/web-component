@@ -663,6 +663,8 @@
   width: 210px;
   background: #ccc;
   border-radius: 8px;
+  transform: perspective(970px) rotateY(24deg) scale(0.9) rotateX(15deg);
+  transition: 0.6s ease all;
 }
 
 .card-info__name.ds-text {

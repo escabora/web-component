@@ -32,15 +32,6 @@ const adress = async () => {
   })
 }
 
-const profession = async () => {
-  return await delay({
-    fileds: [],
-    titlePage: [],
-    nextPage: 'adress',
-    prevPage: 'customization',
-  })
-}
-
 const customization = async () => {
   return await delay({
     fileds: [],
