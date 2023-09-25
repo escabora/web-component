@@ -28,8 +28,8 @@ export default function Blue(props) {
       document.addEventListener('UPDATE_STATE', ({detail}) => {
         const newState = useReducer(detail.action, this.initialState, detail.state, props)
           console.log('newState', newState)
-          
-          window.removeEventListener("UPDATE_STATE", false);
+
+          window.removeEventListener("UPDATE_STATE", window);
           this.render(shaddow, newState)
       })
 

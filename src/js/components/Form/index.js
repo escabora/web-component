@@ -7,11 +7,9 @@ const Form = (props, shaddow) => {
   setTimeout(function () {
     const btnSubmit = shaddow.querySelector('.sender')
     btnSubmit.addEventListener('click', (ev) => {
-      console.log('here click')
       dispatchvent({ steps_data: [{ stepName: 'test' }] }, 'UPDATE_STEPS')
     })
-    shaddow.querySelector('.sender').click()
-  }, 80)
+  }, 30)
 
   return `
   ${CardPlaceholder()}
@@ -21,7 +19,7 @@ const Form = (props, shaddow) => {
   ${['CPF', 'name', 'email', 'phone']
     .map((field) => RenderFields(field))
     .join('')}
-  <div class="sender"><button class="ds-button custom sender__next ds-button--primary js--submit" type="submit" data-type="next" disabled="">Próximo</button></div>
+  <div class="sender"><button class="ds-button custom sender__next ds-button--primary js--submit" type="submit" data-type="next">Próximo</button></div>
   </form></div>`
 }
 
