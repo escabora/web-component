@@ -94,7 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst Form = props => {\n  return `<div class='my-component'>\n  <form><input /></form>\n  ${props.name}\n  </div>`;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Form);\n\n//# sourceURL=webpack:///./src/js/components/Form/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Progress__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Progress */ \"./src/js/components/Progress/index.js\");\n\n\nconst Form = props => {\n  return `\n  ${Object(_Progress__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(props)}\n  <div class=''>\n  <form><input /></form>\n  ${props.name}\n  </div>`;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Form);\n\n//# sourceURL=webpack:///./src/js/components/Form/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/components/Progress/index.js":
+/*!*********************************************!*\
+  !*** ./src/js/components/Progress/index.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst Progress = props => {\n  return `<div>\n    <h2>Progress ${props.name}</h2>\n  </div>`;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Progress);\n\n//# sourceURL=webpack:///./src/js/components/Progress/index.js?");
 
 /***/ }),
 

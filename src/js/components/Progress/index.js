@@ -1,7 +1,7 @@
 const Progress = (props) => {
 
   return `<div>
-  <h2>Progress</h2>  
+    <h2>Progress ${props.name}</h2>
   </div>`
 
 }

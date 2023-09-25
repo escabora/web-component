@@ -1,5 +1,8 @@
+import Progress from "../Progress"
 const Form = (props) => {
-  return `<div class='my-component'>
+  return `
+  ${Progress(props)}
+  <div class=''>
   <form><input /></form>
   ${props.name}
   </div>`
