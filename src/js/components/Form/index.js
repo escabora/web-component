@@ -1,6 +1,6 @@
 import Progress from '../Progress'
 import CardPlaceholder from '../CardPlaceholder'
-import RenderFields from './RenderFields'
+import RenderFields from './renderFields'
 import useStep from './useSteps'
 
 const Form = async (props, shaddow) => {
