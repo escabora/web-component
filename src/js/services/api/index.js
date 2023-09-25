@@ -44,7 +44,7 @@ const adress = async () => {
       { name: 'phone', value: '' },
     ],
     titlePage: [],
-    nextStep: 'profession',
+    nextStep: 'customization',
     prevStep: 'person',
     currentStep: 'adress',
   })
@@ -59,8 +59,8 @@ const customization = async () => {
       { name: 'email', value: '' },
     ],
     titlePage: [],
-    nextStep: 'customization',
-    prevStep: 'profession',
+    nextStep: 'basic',
+    prevStep: 'adress',
     currentStep: 'customization',
   })
 }
