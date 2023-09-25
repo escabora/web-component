@@ -1,7 +1,7 @@
 import Form from '../components/Form'
 
-const Layout = (props) => {
-  return Form(props)
+const Layout = (props, shaddow) => {
+  return Form(props, shaddow)
 }
 
 export default Layout

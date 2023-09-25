@@ -10,7 +10,6 @@ const fontsPath = {
 
 const configureFonts = ({fonts, fontDisplay }) => {
   const allFontsPromise = Object.keys(fonts).map((fontName) => {
-    console.log(fonts[fontName])
     const weights = fonts[fontName]
 
     const promises = weights.map((weight) => {
