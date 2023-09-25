@@ -25,20 +25,19 @@ const useStep = async (state, shaddow) => {
   }
 
   const currentStepFields = await getFields(state.currentStep || 'basic')
-  if(state.currentStep != 'basic') {
-    // dispatchevent({
-    //   steps_data: [
-    //     currentStepFields
-    //   ],
-    //   nextStep: currentStepFields.nextStep,
-    //   prevStep: currentStepFields.prevStep,
-    //   currentStep: currentStepFields.currentStep
-    // }, 'UPDATE_STEPS')
-  }
+  // if(state.currentStep != 'basic') {
+  //   // dispatchevent({
+  //   //   steps_data: [
+  //   //     currentStepFields
+  //   //   ],
+  //   //   nextStep: currentStepFields.nextStep,
+  //   //   prevStep: currentStepFields.prevStep,
+  //   //   currentStep: currentStepFields.currentStep
+  //   // }, 'UPDATE_STEPS')
+  // }
   
   console.log('fields', 
-  state.steps_data,
-  currentStepFields,
+  state
   )
 
   setTimeout(function () {
