@@ -59,7 +59,7 @@ const customization = async () => {
       { name: 'email', value: '' },
     ],
     titlePage: [],
-    nextStep: 'finished',
+    nextStep: 'customization',
     prevStep: 'profession',
     currentStep: 'customization',
   })
