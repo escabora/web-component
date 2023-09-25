@@ -1,5 +1,7 @@
 import Layout from '../layout/index'
-import { slylePage } from './styled'
+import { slylePage } from './configure/styled'
+import configureFonts from './configure/fonts'
+
 export default function Blue(props) {
   return class extends HTMLElement {
     constructor() {
@@ -8,6 +10,14 @@ export default function Blue(props) {
       const styleHead = document.createElement('style')
       styleHead.textContent = slylePage
       shaddow.appendChild(styleHead)
+      configureFonts({
+        fonts: {
+          ItauText: [300, 400, 700, 900],
+          ItauDisplay: [300, 700, 900],
+        },
+        fontDisplay: 'auto',
+      })
+
       this.render(shaddow, props)
     }
 

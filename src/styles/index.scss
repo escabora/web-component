@@ -1,5 +1,9 @@
 body, html {
   margin: 0;
+  font-family: var(--font-family-02,"ItauDisplay"),sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
 }
 
 @import './ds-class.scss';

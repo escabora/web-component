@@ -644,3 +644,149 @@
   display: flex;
   flex-direction: row
 }
+
+.card-info__header {
+  margin-bottom: 50px
+}
+
+.card-info__title.ds-text {
+  font-weight: 800;
+  margin: 0 0 8px
+}
+
+.card-info__subtitle.ds-text {
+  margin: 0
+}
+
+.card-info__image {
+  height: 300px;
+  width: 210px;
+  background: #ccc;
+  border-radius: 8px;
+}
+
+.card-info__name.ds-text {
+  font-weight: 800;
+  margin: 24px 0 20px
+}
+
+.card-info__feature {
+  display: flex;
+  margin-bottom: 16px
+}
+
+.card-info__icon {
+  fill: #231d19;
+  min-width: 32px
+}
+
+.card-info__description {
+  margin-left: 15px
+}
+
+.card-info__description-label.ds-text,.card-info__description-value.ds-text {
+  line-height: 1;
+  margin: 0 0 7px
+}
+
+.card-info__description-value.ds-text {
+  font-weight: 800
+}
+
+.ds-text {
+  color: var(--color-neutral-low-pure)
+}
+
+.ds-text__title {
+  font-family: var(--font-family-01);
+  font-weight: var(--font-weight-bold)
+}
+
+.ds-text__title--sm {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-md)
+}
+
+@media(max-width: 768px) {
+  .ds-text__title--sm {
+      font-size:var(--font-size-xs);
+      line-height: var(--line-height-sm)
+  }
+}
+
+.ds-text__title--md {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-lg)
+}
+
+@media(max-width: 768px) {
+  .ds-text__title--md {
+      font-size:var(--font-size-xs);
+      line-height: var(--line-height-sm)
+  }
+}
+
+.ds-text__title--lg {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-xl)
+}
+
+@media(max-width: 768px) {
+  .ds-text__title--lg {
+      font-size:var(--font-size-sm);
+      line-height: var(--line-height-md)
+  }
+}
+
+.ds-text__title--xl {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xxl)
+}
+
+@media(max-width: 768px) {
+  .ds-text__title--xl {
+      font-size:var(--font-size-md);
+      line-height: var(--line-height-lg)
+  }
+}
+
+.ds-text__title--xxl {
+  font-size: var(--font-size-xxl);
+  line-height: var(--line-height-xxxl)
+}
+
+@media(max-width: 768px) {
+  .ds-text__title--xxl {
+      font-size:var(--font-size-lg);
+      line-height: var(--line-height-xl)
+  }
+}
+
+.ds-text__paragraph {
+  font-family: var(--font-family-02)
+}
+
+.ds-text__paragraph--xs {
+  font-size: var(--font-size-xxxs);
+  line-height: var(--line-height-xxs)
+}
+
+.ds-text__paragraph--sm {
+  font-size: var(--font-size-xxs);
+  line-height: var(--line-height-xs)
+}
+
+.ds-text__paragraph--md {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-sm)
+}
+
+.ds-text__paragraph--lg {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-md)
+}
+
+.ds-text__paragraph--xl {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-lg)
+}
