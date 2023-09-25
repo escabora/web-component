@@ -448,3 +448,100 @@
   border-color: var(--color-neutral-high-dark);
   color: var(--color-neutral-low-medium)
 }
+
+.ds-button {
+  align-items: center;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-family-02);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  height: 48px;
+  justify-content: center;
+  padding: var(--spacing-nano) var(--spacing-xxxs);
+  position: relative;
+  text-decoration: none;
+  transition: background-color .3s ease
+}
+
+@media(max-width: 1024px) {
+  .ds-button {
+      font-size:var(--font-size-xs)
+  }
+}
+
+.ds-button--disabled {
+  cursor: not-allowed
+}
+
+.ds-button--primary {
+  background-color: var(--color-primary-pure);
+  color: var(--color-neutral-high-pure)
+}
+
+.ds-button--primary:hover {
+  background-color: var(--color-primary-dark)
+}
+
+.ds-button--primary.ds-button--disabled {
+  background-color: var(--color-neutral-high-dark);
+  color: var(--color-neutral-low-light)
+}
+
+.ds-button--high-contrast {
+  background-color: var(--color-neutral-high-pure);
+  color: var(--color-primary-pure)
+}
+
+.ds-button--high-contrast:hover {
+  background-color: var(--color-neutral-high-light)
+}
+
+.ds-button--high-contrast.ds-button--disabled {
+  background-color: var(--color-neutral-high-dark);
+  color: var(--color-neutral-low-light)
+}
+
+.ds-button--secondary {
+  background-color: var(--color-neutral-high-pure);
+  border: 1px solid var(--color-support-pure);
+  color: var(--color-support-pure)
+}
+
+.ds-button--secondary:hover {
+  background-color: var(--color-secondary-light)
+}
+
+.ds-button--secondary.ds-button--disabled {
+  background-color: var(--color-neutral-high-light);
+  border: 1px solid var(--color-neutral-high-dark);
+  color: var(--color-neutral-high-dark)
+}
+
+.ds-button--action {
+  background-color: transparent;
+  color: var(--color-support-pure)
+}
+
+.ds-button--action:hover {
+  color: var(--color-support-dark)
+}
+
+.ds-button--action.ds-button--disabled {
+  background-color: transparent;
+  color: var(--color-neutral-high-dark)
+}
+
+.ds-button--fluid {
+  width: 100%
+}
+
+.ds-button__left-icon {
+  margin-right: 12px
+}
+
+.ds-button__right-icon {
+  margin-left: 12px
+}
