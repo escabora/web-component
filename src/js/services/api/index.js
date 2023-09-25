@@ -5,39 +5,63 @@ const delay = (data) =>
     }, 300)
   })
 
-  const basic = async () => {
-    return await delay({
-      fileds: [],
-      titlePage: [],
-      nextPage: 'person',
-      prevPage: 'basic',
-    })
-  }
-
-  const person = async () => {
+const basic = async () => {
   return await delay({
-    fileds: [],
+    fileds: [
+      { name: 'CPF', value: '' },
+      { name: 'name', value: '' },
+      { name: 'email', value: '' },
+      { name: 'phone', value: '' },
+    ],
+    titlePage: 'Vamos lá?',
+    nextStep: 'person',
+    prevStep: 'basic',
+    currentStep: 'basic',
+  })
+}
+
+const person = async () => {
+  return await delay({
+    fileds: [
+      { name: 'CPF', value: '' },
+      { name: 'name', value: '' },
+      { name: 'email', value: '' },
+      { name: 'phone', value: '' },
+    ],
     titlePage: [],
-    nextPage: 'adress',
-    prevPage: 'basic',
+    nextStep: 'adress',
+    prevStep: 'basic',
+    currentStep: 'person',
   })
 }
 
 const adress = async () => {
   return await delay({
-    fileds: [],
+    fileds: [
+      { name: 'CPF', value: '' },
+      { name: 'name', value: '' },
+      { name: 'email', value: '' },
+      { name: 'phone', value: '' },
+    ],
     titlePage: [],
-    nextPage: 'profession',
-    prevPage: 'person',
+    nextStep: 'profession',
+    prevStep: 'person',
+    currentStep: 'adress',
   })
 }
 
 const customization = async () => {
   return await delay({
-    fileds: [],
+    fileds: [
+      { name: 'CPF', value: '' },
+      { name: 'name', value: '' },
+      { name: 'email', value: '' },
+      { name: 'phone', value: '' },
+    ],
     titlePage: [],
-    nextPage: 'finished',
-    prevPage: 'profession',
+    nextStep: 'finished',
+    prevStep: 'profession',
+    currentStep: 'customization',
   })
 }
 
@@ -45,6 +69,5 @@ export default {
   basic,
   person,
   adress,
-  profession,
   customization,
 }

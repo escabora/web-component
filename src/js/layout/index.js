@@ -1,7 +1,7 @@
 import Form from '../components/Form'
 
-const Layout = (props, shaddow) => {
-  return Form(props, shaddow)
+const Layout = async (props, shaddow) => {
+  return await Form(props, shaddow)
 }
 
 export default Layout

@@ -18,8 +18,8 @@ export default function Blue(props) {
         },
         fontDisplay: 'auto',
       })
-
-      this.initialState = {
+      
+      this.initialState = JSON.parse(sessionStorage.getItem('persiste_store')) || {
         steps_data: [],
         info_page: '',
         ...props,
@@ -34,15 +34,15 @@ export default function Blue(props) {
       })
 
       this.render(shaddow, this.initialState)
+
     }
 
-    render(shaddow, state) {
-
+    async render (shaddow, state) {
       console.log('render', state)
       if(shaddow.querySelector('.proposal')) shaddow.querySelector('.proposal').remove()
       const section = document.createElement('section')
       section.setAttribute('class', 'proposal')
-      section.innerHTML = Layout(state, shaddow)
+      section.innerHTML = await Layout(state, shaddow)
       shaddow.appendChild(section)
     }
   }

@@ -6,17 +6,14 @@ function useReducer(action, initialState, state, props) {
         ...props,
         ...state,
       }
+      sessionStorage.setItem('persiste_store', JSON.stringify(newState))
       return newState
     default:
       throw new Error()
   }
 }
 
-export const dispatchvent = (state, action) => {
-  // console.log({
-  //   state,
-  //   action,
-  // })
+export const dispatchevent = (state, action) => {
   const newEvent = new CustomEvent('UPDATE_STATE', {
     detail: { state, action },
   })

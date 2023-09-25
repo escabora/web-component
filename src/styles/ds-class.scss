@@ -550,6 +550,7 @@
   display: flex;
   margin-top: 80px;
   row-gap: 10px;
+  flex-direction: column;
 }
 
 .sender button {
@@ -791,4 +792,11 @@
 .ds-text__paragraph--xl {
   font-size: var(--font-size-md);
   line-height: var(--line-height-lg)
+}
+
+.ds-button--secondary {
+  background-color: var(--color-neutral-high-pure);
+  border: 1px solid var(--color-support-pure);
+  color: var(--color-support-pure);
+  outline: 1px solid var(--link-color);
 }
