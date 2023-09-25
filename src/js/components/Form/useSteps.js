@@ -36,9 +36,7 @@ const useStep = async (state, shaddow) => {
   //   // }, 'UPDATE_STEPS')
   // }
   
-  console.log('fields', 
-  state
-  )
+  console.log('fields', state)
 
   setTimeout(function () {
     const next = shaddow.querySelector('.js--submit')
