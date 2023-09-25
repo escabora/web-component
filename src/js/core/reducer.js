@@ -1,9 +1,4 @@
 function useReducer(action, initialState, state, props) {
-  console.log({
-    action,
-    initialState,
-    state,
-  })
   switch (action) {
     case 'UPDATE_STEPS':
       const newState = {
