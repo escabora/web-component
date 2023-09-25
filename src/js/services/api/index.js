@@ -7,7 +7,7 @@ const delay = (data) =>
 
 const basic = async () => {
   return await delay({
-    fileds: [
+    fields: [
       { name: 'CPF', value: '' },
       { name: 'name', value: '' },
       { name: 'email', value: '' },
@@ -22,7 +22,7 @@ const basic = async () => {
 
 const person = async () => {
   return await delay({
-    fileds: [
+    fields: [
       { name: 'CPF', value: '' },
       { name: 'name', value: '' },
       { name: 'email', value: '' },
@@ -37,7 +37,7 @@ const person = async () => {
 
 const adress = async () => {
   return await delay({
-    fileds: [
+    fields: [
       { name: 'CPF', value: '' },
       { name: 'name', value: '' },
       { name: 'email', value: '' },
@@ -52,7 +52,7 @@ const adress = async () => {
 
 const customization = async () => {
   return await delay({
-    fileds: [
+    fields: [
       { name: 'CPF', value: '' },
       { name: 'name', value: '' },
       { name: 'email', value: '' },
