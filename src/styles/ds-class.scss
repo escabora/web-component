@@ -572,8 +572,11 @@
 
 @media only screen and (min-width: 1024px) {
   .proposal__container:first-child {
-      padding:80px 120px 20px 100px
+    padding:80px 120px 20px 100px
   }
+}
+.proposal__container:first-child {
+    background-color: var(--card-info-background-color,var(--color-neutral-high-light));
 }
 
 @media only screen and (min-width: 1366px) {
@@ -596,4 +599,48 @@
 
 .proposal {
   display: flex;
+}
+
+.ds-stepper {
+  font-family: var(--font-family-02)
+}
+
+.ds-stepper__content {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--spacing-xxxs) 0
+}
+
+.ds-stepper__state {
+  color: var(--color-neutral-low-dark);
+  font-size: var(--font-size-xxs);
+  line-height: var(--line-height-xs);
+  margin: 0
+}
+
+.ds-stepper__title {
+  color: var(--color-neutral-low-pure);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-sm);
+  margin: 0
+}
+
+.ds-stepper__bar,.ds-stepper__progress {
+  border-radius: var(--border-radius-sm);
+  height: 4px
+}
+
+.ds-stepper__progress {
+  background: var(--color-neutral-high-dark)
+}
+
+.ds-stepper__bar {
+  background: var(--color-success-pure);
+  transition: width .3s;
+  width: 10%
+}
+
+.ds-stepper__navigation {
+  display: flex;
+  flex-direction: row
 }
